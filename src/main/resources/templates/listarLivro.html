@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Livros</title>
+</head>
+<body>
+
+    <h1>Veja os livros cadastrados:</h1>
+
+    <div th:each="livro : ${livro}">
+        <div>
+            <p><strong>Nome: </strong> <span th:text="${livro.nome}"></span></p>
+            <p><strong>Autor: </strong> <span th:text="${livro.autor}"></span></p>
+            <p><strong>Descrição:  </strong> <span th:text="${livro.descricao}"></span></p>
+            <hr>
+        </div>
+
+
+
+
+    </div>
+</body>
+</html>
